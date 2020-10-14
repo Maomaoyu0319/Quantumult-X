@@ -1,0 +1,13 @@
+# TikTok去广告 by Bigdragon
+
+hostname = api*.tiktokv.com, api*.musical.ly, *-hl.snssdk.com
+
+^https?:\/\/.+\.tiktokv\.com\/api\/ad\/ url reject-img
+^https?:\/\/.+\.tiktokv\.com\/.+stats\/ url reject-img
+^https?:\/\/.+\.musical\.ly\/api\/ad\/ url reject-img
+^https?:\/\/.+\.musical\.ly\/.+stats\/ url reject-img
+^https?:\/\/.+\.snssdk\.com\/api\/ad\/ url reject-img
+^https?:\/\/.+\.snssdk\.com\/monitor\/ url reject-img
+^https?:\/\/.+\.snssdk\.com\/.+app_log\/ url reject-img
+^https?:\/\/.+\.snssdk\.com\/.+promotion\/ url reject-img
+^https?:\/\/.+\.snssdk\.com\/.+stats\/ url reject-img
