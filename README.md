@@ -1,3 +1,2 @@
-# Quantumult X
+# Quantumult X 自用配置
 
-自用文件
