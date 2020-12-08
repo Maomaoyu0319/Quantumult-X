@@ -48,15 +48,15 @@
         "2 6-22/2 * * * https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js, tag=TestFlight监控, img-url=https://raw.githubusercontent.com/Orz-3/task/master/testflight.png, enabled=false",
         "25 * * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js, tag=京东金融养猪猪, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdyz.png, enabled=false",
         "55 23 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unsubscribe.js, tag=取关京东店铺商品, img-url=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/image/jd.png, enabled=false",
-        "0 9 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js, tag=机场签到Cookie版, img-url=https://raw.githubusercontent.com/Orz-3/task/master/airport.png, enabled=false" 
-        "10 9,18 * * * https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.js, tag=京喜农场, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxnc.png, enabled=true"
-        "0 0,9,11,13,15,17,19,20,21,23 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js, tag=直播红包雨, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true"
-        "10 1 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js, tag=数码加购京豆, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png, enabled=true"
-        "10 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js, tag=京东快递签到, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_kd.png, enabled=true"
-        "10 7 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js, tag=领京豆额外奖励, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png, enabled=true"
-        "10 7 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js, tag=秒杀红包雨, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true"
-        "10 7 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js, tag=京东汽车, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_car.png, enabled=true"
-        "11 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js, tag=健康抽奖机（31日结束）, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_health.png, enabled=true"
+        "0 9 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js, tag=机场签到Cookie版, img-url=https://raw.githubusercontent.com/Orz-3/task/master/airport.png, enabled=false",
+        "10 9,18 * * * https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_nc.js, tag=京喜农场, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxnc.png, enabled=true",
+        "0 0,9,11,13,15,17,19,20,21,23 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js, tag=直播红包雨, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
+        "10 1 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js, tag=数码加购京豆, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png, enabled=true",
+        "10 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js, tag=京东快递签到, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_kd.png, enabled=true",
+        "10 7 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js, tag=领京豆额外奖励, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_bean_home.png, enabled=true",
+        "10 7 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js, tag=秒杀红包雨, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_redPacket.png, enabled=true",
+        "10 7 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js, tag=京东汽车, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_car.png, enabled=true",
+        "11 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js, tag=健康抽奖机（31日结束）, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_health.png, enabled=true",
         "10 0 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js, tag=京东年终奖（12日结束）, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd1212.png, enabled=true"
 
     ]
