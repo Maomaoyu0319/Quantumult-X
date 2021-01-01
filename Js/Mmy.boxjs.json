@@ -12,13 +12,11 @@
         "zd_shareCode1",
         "nc_shareCode1",
         "mc_shareCode1",
-        "dd_shareCode1",
         "jx_shareCode1",
         "zz_shareCode1",
         "zd_shareCode2",
         "nc_shareCode2",
         "mc_shareCode2",
-        "dd_shareCode2",
         "jx_shareCode2",
         "zz_shareCode2"
       ],
@@ -43,13 +41,6 @@
           "val": "",
           "type": "text",
           "desc": "你自己的东东萌宠互助码"
-        },
-        {
-          "id": "dd_shareCode1",
-          "name": "东东工厂互助码1",
-          "val": "",
-          "type": "text",
-          "desc": "你自己的东东工厂互助码"
         },
         {
           "id": "jx_shareCode1",
@@ -85,13 +76,6 @@
           "val": "",
           "type": "text",
           "desc": "你自己的东东萌宠互助码"
-        },
-        {
-          "id": "dd_shareCode2",
-          "name": "东东工厂互助码2",
-          "val": "",
-          "type": "text",
-          "desc": "你自己的东东工厂互助码"
         },
         {
           "id": "jx_shareCode2",
