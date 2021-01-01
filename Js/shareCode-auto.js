@@ -9,7 +9,6 @@ const shareCodes = [
     zd: $.getdata("zd_shareCode1") || "",
     nc: $.getdata("nc_shareCode1") || "",
     mc: $.getdata("mc_shareCode1") || "",
-    ddgc: $.getdata("dd_shareCode1") || "",
     jxgc: $.getdata("jx_shareCode1") || "",
     jdzz: $.getdata("zz_shareCode1") || "",
   },
@@ -17,7 +16,6 @@ const shareCodes = [
     zd: $.getdata("zd_shareCode2") || "",
     nc: $.getdata("nc_shareCode2") || "",
     mc: $.getdata("mc_shareCode2") || "",
-    ddgc: $.getdata("dd_shareCode2") || "",
     jxgc: $.getdata("jx_shareCode2") || "",
     jdzz: $.getdata("zz_shareCode2") || "",
   },
@@ -28,7 +26,7 @@ $.random = Math.floor(Math.random() * 60);
 !(async () => {
   console.log(`\n此脚本延迟${$.random}秒执行\n`);
   for (let i = 0; i < shareCodes.length; i++) {
-    const { zd, nc, mc, ddgc, jxgc, jdzz } = shareCodes[i];
+    const { zd, nc, mc, jxgc, jdzz } = shareCodes[i];
     await $.wait($.random);
     zd &&
       (await create(
@@ -46,12 +44,6 @@ $.random = Math.floor(Math.random() * 60);
       (await create(
         `http://api.turinglabs.net/api/v1/jd/pet/create/${mc}/`,
         "东东萌宠"
-      ));
-    await $.wait($.random);
-    ddgc &&
-      (await create(
-        `http://api.turinglabs.net/api/v1/jd/ddfactory/create/${ddgc}/`,
-        "东东工厂"
       ));
     await $.wait($.random);
     jxgc &&
