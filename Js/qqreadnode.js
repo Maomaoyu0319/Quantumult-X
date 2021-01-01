@@ -69,9 +69,9 @@ const CASH = 0;//提现金额 可设置0 1 2 10 30 50 100  设置0关闭
 
 
 //在``里面填写，多账号换行
-let qqreadbodyVal=``
-let qqreadtimeurlVal=``
-let qqreadtimeheaderVal=``
+let qqreadbodyVal=`{"common":{"appid":1450024394,"areaid":5,"qq_ver":"8.5.0","os_ver":"iOS 12.4.9","mp_ver":"0.41.0","mpos_ver":"1.23.0","brand":"iPhone","model":"iPhone 6<iPhone7,2>","screenWidth":375,"screenHeight":667,"windowWidth":375,"windowHeight":618,"openid":"2506792701","guid":2506792701,"session":"v5ido33y1pegrrdyn6ygtxh2dfeybbo7","scene":2079,"source":-1,"hasRedDot":"false","missions":-1,"caseID":-1},"dataList":[{"click1":"bookDetail_bottomBar_read_C","click2":"bookLib_freeBook_bookClick_C","route":"pages/book-read/index","refer":"pages/book-detail/index","options":{"bid":"35086385","cid":"1"},"dis":1609469566494,"ext6":64,"eventID":"bookRead_show_I","type":"shown","ccid":1,"bid":"35086385","bookStatus":0,"bookPay":0,"chapterStatus":0,"ext1":{"font":18,"bg":0,"pageMode":1},"from":"bookLib_freeBook_bookClick_C_1_35086385"}]}`
+let qqreadtimeurlVal=`https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=2079&refer=pages%2Fnav-library%2Findex&bid=35086385&readTime=5839&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A5839%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1`
+let qqreadtimeheaderVal=`{"Cookie":"ywguid=2506792701;ywkey=ywaNmMKspET6;platform=ios;channel=mqqmina;mpVersion=0.41.0;qq_ver=8.5.0;os_ver=iOS 12.4.9;mpos_ver=1.23.0;platform=ios;openid=2506792701","Accept":"*/*","Content-Type":"application/json","ywsession":"v5ido33y1pegrrdyn6ygtxh2dfeybbo7","mpversion":"0.41.0","Connection":"keep-alive","Host":"mqqapi.reader.qq.com","User-Agent":"QQ/8.5.0.635 CFNetwork/978.0.7 Darwin/18.7.0","Referer":"https://appservice.qq.com/1110657249/0.41.0/page-frame.html","Accept-Encoding":"br, gzip, deflate","Accept-Language":"zh-cn"}`
 
 let QQ_READ_COOKIES = {  
   "qqreadbodyVal": qqreadbodyVal.split('\n'),
