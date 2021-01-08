@@ -1,0 +1,8 @@
+
+[URL Rewrite]
+
+(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) $1$3 302
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) - reject
+
+[MITM]
+hostname = *.googlevideo.com
