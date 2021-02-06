@@ -1,0 +1,46 @@
+# 自用模块外部引用list合集
+
+# BoxJs
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.surge.tf.sgmodule
+
+# Sub-Store
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Surge.sgmodule
+
+# 屏蔽ios系统更新
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/SoftwareUpdate.sgmodule
+
+# 重定向
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/General.sgmodule
+
+# 神机去广告
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/Advertising.sgmodule
+
+# Tiktok解锁
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Unlock/TikTokJP.sgmodule
+
+# 油管广告
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/YouTubeAds.sgmodule
+
+# 聚合去广告重写
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/Surge/Advertising/Advertising.sgmodule
+
+# B站广告
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.sgmodule
+
+# 知乎广告
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_lite.sgmodule
+
+# 彩云天气VIP
+https://raw.githubusercontent.com/Maomaoyu0319/ios_rule_script/master/script/caiyun/caiyun_svip.sgmodule
+
+# 优酷广告
+https://raw.githubusercontent.com/Choler/Surge/master/Module/youku.sgmodule
+
+# 抖音广告
+https://raw.githubusercontent.com/Choler/Surge/master/Module/douyin.sgmodule
+
+# ChangeUA
+https://raw.githubusercontent.com/zZPiglet/Task/master/ChangeUA.sgmodule
+
+# justopenit
+https://raw.githubusercontent.com/zZPiglet/Task/master/noredirect.sgmodule

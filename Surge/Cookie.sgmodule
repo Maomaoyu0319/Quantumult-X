@@ -1,0 +1,115 @@
+#!name=自用 Cookies Module
+#!desc=iOS Cookies 模块
+
+[Script]
+# 京东  （api.m.jd.com）
+http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean(Index|GroupStageIndex) script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=jd
+
+# 爱奇艺   （ifac*.iqiyi.com）
+http-request ^https?:\/\/iface(\d)?\.iqiyi\.com\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=iqyi
+
+# Bilibli直播(passport.biligame.com)
+http-request ^https:\/\/passport\.biligame\.com\/api\/login\/sso.+?version%22%3A%22(3|4|5) script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js, timeout=10, tag=Manga.js
+
+# Acfun  (*.acfun.cn)
+http-request ^https:\/\/api\-new\.app\.acfun\.cn\/rest\/app\/user\/personalInfo script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.cookie.js, tag=acfun
+
+# 网易云音乐 (music.163.com)
+http-request ^https:\/\/music.163.com\/weapi\/user\/level script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js, requires-body=true, tag=neteasemusic
+
+# 美团 （i.meituan.com）
+http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, tag=muantuan
+
+# 腾讯视频 (*.video.qq.com)
+http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js, tag=videoqq
+
+# 字幕组 （*.rrys2020.com, ios.zmzapi.com）
+http-request ^https?:\/\/(www\.)?rrys2020\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.cookie.js, tag=zimuzu
+http-request ^http:\/\/ios.zmzapi.com\/index.php.*a=(mobile_)?login script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.cookie.js, tag=zimuzu
+
+# rrtv (*.rr.tv)
+http-request ^https:\/\/api\.rr\.tv\/user\/profile script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js, tag=rrtv
+
+# 饿了么 (h5.ele.me)
+http-request ^https:\/\/h5\.ele\.me\/restapi\/eus\/v\d\/current_user$ script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemGetCookies.js, timeout=10, tag=elem
+
+# 吾爱破解 (www.52pojie.cn)
+http-request https:\/\/www\.52pojie\.cn\/home\.php\? script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=52pojie
+
+# 滴滴 （as.xiaojukeji.com）
+http-request ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi.js, timeout=10, tag=DiDi.js
+
+# 百度贴吧 （c.tieba.baidu.com）
+http-request https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=tieba
+
+# 什么值得买（zhiyou.smzdm.com,user-api.smzdm.com）
+http-request ^https?:\/\/zhiyou\.smzdm\.com\/user$ requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.js, tag=什么值得买_获取cookie
+http-request ^https?:\/\/user-api\.smzdm\.com\/user_login\/normal$ requires-body=1,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_checkin.js, tag=什么值得买_获取账号密码
+
+# 微博通知（m.weibo.cn）
+http-request ^https:\/\/m\.weibo\.cn\/feed\/ script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js, tag=微博通知
+
+# 哔哩哔哩动漫 (api.vc.bilibili.com)
+获取哔哩哔哩 = type=http-request,pattern=^https:\/\/api.vc.bilibili.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_new,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dompling/Script/master/BiliBili/bilibili.cookie.js,script-update-interval=0
+
+# bilibili直播（*.bilibili.com）
+http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js,enable=false, tag=哔哩哔哩
+
+# 美团（i.meituan.com）
+http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, tag=美团
+
+# 美团外卖（promotion.waimai.meituan.com）
+http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/entry script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js, tag=美团外卖
+http-request ^https:\/\/promotion.waimai.meituan.com\/playcenter\/signIn\/doaction script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.cookie.js, requires-body=true,  tag=美团外卖
+
+# WPS（zt.wps.cn）
+http-request ^https:\/\/zt.wps.cn\/2018\/docer_check_in\/api\/act_list script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.cookie.js, tag=WPS
+
+# 微博超话获取Cookie（api.weibo.cn）
+微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js, requires-body=false
+
+# 机场签到Cookie版
+获取Cookie = type=http-request, pattern=https:\/\/cccat\.io, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
+（其中https:\/\/cccat\.io需要替换为你自己的机场链接）
+
+# 微博、微博钱包签到（api.weibo.cn, pay.sc.weibo.com）
+# 获取微博 Cookie.
+weibo.js = type=http-request,pattern=https:\/\/api\.weibo\.cn\/\d\/page\/\w+\?gsid,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+# 微博钱包签到Cookie
+weibo.js = type=http-request,pattern=https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\?,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js
+
+# 京东到家（daojia.jd.com）
+http-request https:\/\/daojia\.jd\.com\/client\?_jdrandom=\d{13}&functionId=%2Fsignin script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js, tag=京东到家
+
+# 小米运动获取Token（account.huami.com）
+小米运动获取Token = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
+
+# 喜马拉雅极速版Cookie（m.ximalaya.com）
+http-request https:\/\/m\.ximalaya\.com\/speed\/task-center\/account\/coin script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmly_speed_ccokie.js , requires-body=true, timeout=10, tag=喜马拉雅极速版Cookie
+
+# 中青极速版获取body（ios.baertt.com）
+http-request https://ios.baertt.com/v5/article/complete.json script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/zqgetbody.js, requires-body=true, timeout=10, tag=中青（阅读获取body）
+# 中青浏览赚任务
+中青看看赚 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/task\/browse_(start|end)\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js,script-update-interval=0
+
+# 京东赚赚Cookie
+京东赚赚cookie = type=http-request,pattern=^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
+
+# 伊利乳品（club.yili.com）
+伊利乳品 = type=http-request, requires-body=1, pattern=https:\/\/club\.yili\.com\/MALLIFChe\/MCSWSIAPI\.asmx\/Call,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/yiLi.cookie.js
+
+# 企鹅读书获取Cookie（mqqapi.reader.qq.com）
+企鹅读书获取更新body = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/log\/v4\/mqq\/track,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js, script-update-interval=0
+# 企鹅读书获取时长cookie
+企鹅读书获取时长cookie = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid?,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js, requires-header=true
+
+# 宠汪汪赛跑助力Token (draw.jdfcloud.com)
+宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+
+# 中国移动Cookie 注意获取Cookie有两条脚本 (clientaccess.10086.cn)
+CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/LN\/uamrandcodelogin\/autoLogin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js, requires-body=true, debug=true
+CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/BN\/realFeeQuery\/getRealFee,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js, requires-body=true, debug=true
+
+[MITM]
+hostname = %APPEND% clientaccess.10086.cn, draw.jdfcloud.com, mqqapi.reader.qq.com, club.yili.com, ios.baertt.com, api.weibo.cn, account.huami.com, m.ximalaya.com, api.weibo.cn, pay.sc.weibo.com, daojia.jd.com, promotion.waimai.meituan.com, i.meituan.com, zt.wps.cn, *.bilibili.com, m.weibo.cn, passport.biligame.com, api.m.jd.com, ifac*.iqiyi.com, i.meituan.com, m.bilibili.com, act.10010.com,g.com, *.video.qq.com, *.rrys2020.com, ios.zmzapi.com, h5.ele.me, *.rr.tv, h5.ele.me, www.52pojie.cn, *.bilibili.com, as.xiaojukeji.com, c.tieba.baidu.com, zhiyou.smzdm.com,user-api.smzdm.com,api.vc.bilibili.com
